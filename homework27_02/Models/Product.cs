@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace homework27_02.Models
 {
-    public class Brand
+    public class Product
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public List<Product> Products { get; set; }
+        public string Name { get; set; }    
+        public int Price { get; set; }  
+        public int BrandId { get; set; }  
+        public Brand Brand { get; set; }
     }
 }
